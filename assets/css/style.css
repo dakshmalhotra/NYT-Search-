@@ -1,0 +1,55 @@
+.header {
+    font-family: 'Anton', sans-serif;
+    height: 100px;
+    background-color: #000033;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #000033;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sub-head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #e6e6ff;
+    height: 50px;
+}
+.sub-head h3 {
+    margin: 0px 0px;
+    padding-top: 12px;
+}
+#search-parameters {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    border: 1px solid #ccccff;
+}
+.form h5 {
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+.form input {
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 1200px;
+}
+.form select {
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.submit {
+    margin: 25px 0px 25px 10px;
+}
+#top-articles {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #e6e6ff;
+    height: 50px;
+}
+#top-articles h3 {
+    margin: 0px 0px;
+    padding-top: 12px;
+}

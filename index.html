@@ -1,14 +1,48 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NYT News/title>
+    <title>NYT Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css" />
-    <script src="/assets/javascript/searchResults.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <script src="assets/javascript/searchResults.js"></script>
 </head>
 <body>
+    <div class="header">
+        <h1>New York Times Search</h1>
+    </div> <!-- end of header div -->
+    <div class="container" id="search-parameters">
+        <div class="sub-head"><h3>Search Parameters</h3>
+        </div> <!-- end of sub-head div -->
+            <div class="form">
+                <h5>Search Term:</h5>
+                <input type="text" name="searchTerm">
+                <h5>Number of Records to Retrieve:</h5>
+                <select name="recordsNumber">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+                <h5>Start Year (Optional):</h5>
+                <input type="text" name="startYear">
+                <h5>End Year (Optional):</h5>
+                <input type="text" name="endYear"> <br>
+                <button class="submit" id="search">Search</button>
+                <button class="submit" id="clearResults">Clear Results</button>
+            </div> <!-- end of form div -->
+
+            <div class="container" id="top-articles">
+                <h3>Top Articles</h3>
+                <div id="top-articles-go-here"></div>
+            </div> <!-- end of top articles -->
+    </div> <!-- end of search parameters div-->
+
+    <footer>
+    </footer>
     
 </body>
 </html>
