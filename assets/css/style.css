@@ -28,15 +28,19 @@
 .form h5 {
     padding-left: 10px;
     margin-bottom: 2px;
+    font-size: 10pt;
 }
 .form input {
     margin-left: 10px;
     border-radius: 5px;
     width: 1200px;
+    height: 25px;
 }
 .form select {
     margin-left: 10px;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12pt;
 }
 .submit {
     margin: 25px 0px 25px 10px;
