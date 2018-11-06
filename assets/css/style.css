@@ -1,0 +1,12 @@
+.header {
+    font-family: 'Anton', sans-serif;
+    height: 100px;
+    background-color: #00004d;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #00004d;
+    text-align: center;
+}
+.sub-head {
+    font-family: 'Poppins', sans-serif;
+}
