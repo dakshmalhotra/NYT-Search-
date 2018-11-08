@@ -26,6 +26,34 @@ function send_request_handler(){
 }
 
 function receive_request_handler(response){
-    console.log(response);
+    var data = response;
+
+    data.response.docs.forEach(element => {
+        var headline = element.headline.main;
+        var byline  = (element.byline) ? element.byline.original : '';
+        var snippet = element.snippet;
+        var pub_date = new Date(element.pub_date)
+        var temp = pub_date.toDateString();
+        console.log(temp)
+        var type_of_material = element.type_of_material;
+    
+        var $wrapper = $('<div>');
+        var $headline = $('<h3>');
+        var $byline = $('<small>');
+        var $snippet = $('<p>');
+        var $pub_date = $('<small>');
+        var $type = $('<p>');
+    
+        $headline.addClass('headline').text(headline)
+        $byline.addClass('byline').text(byline)
+        $snippet.addClass('snippet').text(snippet)
+        $pub_date.addClass('pub-date').text(pub_date)
+        $type.addClass('type').text(type_of_material)
+    
+        $wrapper.append($headline, $pub_date, $byline, $snippet)
+        $('#top-articles').append($wrapper)
+    
+    
+      });
 }
 $(document).on("click", "#search", send_request_handler);
