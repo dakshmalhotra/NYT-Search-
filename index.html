@@ -18,7 +18,7 @@
         </div> <!-- end of sub-head div -->
             <div class="form">
                 <h5>Search Term:</h5>
-                <input type="text" name="searchTerm">
+                <input type="text" name="searchTerm" id="query">
                 <h5>Number of Records to Retrieve:</h5>
                 <select name="recordsNumber">
                     <option value="5">5</option>
@@ -28,9 +28,9 @@
                     <option value="100">100</option>
                 </select>
                 <h5>Start Year (Optional):</h5>
-                <input type="text" name="startYear">
+                <input type="number" min="1980" max="2018" step="1" name="startYear" id="begin_date">
                 <h5>End Year (Optional):</h5>
-                <input type="text" name="endYear"> <br>
+                <input type="number" min="1980" max="2018" step="1" name="endYear" id="end_date"> <br>
                 <button class="submit" id="search">Search</button>
                 <button class="submit" id="clearResults">Clear Results</button>
             </div> <!-- end of form div -->
@@ -40,8 +40,10 @@
                 <div id="top-articles-go-here"></div>
             </div> <!-- end of top articles -->
     </div> <!-- end of search parameters div-->
+    <hr>
 
     <footer>
+
     </footer>
     
 </body>
