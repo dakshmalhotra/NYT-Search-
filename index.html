@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="assets/javascript/searchResults.js"></script>
+
 </head>
 <body>
     <div class="header">
@@ -20,12 +22,10 @@
                 <h5>Search Term:</h5>
                 <input type="text" name="searchTerm" id="query">
                 <h5>Number of Records to Retrieve:</h5>
-                <select name="recordsNumber">
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
+                <select name="recordsNumber" id="pages">
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
                 </select>
                 <h5>Start Year (Optional):</h5>
                 <input type="number" min="1980" max="2018" step="1" name="startYear" id="begin_date">

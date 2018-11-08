@@ -5,6 +5,7 @@ function send_request_handler(){
         'api-key': "a80bbaccde51425ebd955684ea745fb0",
         'q': "",  //query  
         'sort': "newest",
+        'page': 0,
  //       'begin_date': "", //start date
  //       'end_date': ""    //end
     };
@@ -25,3 +26,8 @@ function send_request_handler(){
       method: 'GET',
     }).done(receive_request_handler).fail(function(err) {  throw err;    });
 }
+
+function receive_request_handler(response){
+    console.log(response);
+}
+$(document).on("click", "#search", send_request_handler);
