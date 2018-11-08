@@ -1,5 +1,3 @@
-
-
 function send_request_handler(){
     var request_obj = {
         'api-key': "a80bbaccde51425ebd955684ea745fb0",
