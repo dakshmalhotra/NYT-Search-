@@ -1,5 +1,3 @@
-
-
 function send_request_handler(){
     var request_obj = {
         'api-key': "a80bbaccde51425ebd955684ea745fb0",
@@ -25,3 +23,5 @@ function send_request_handler(){
       method: 'GET',
     }).done(receive_request_handler).fail(function(err) {  throw err;    });
 }
+
+$(document).on('click', '#search', send_request_handler);
